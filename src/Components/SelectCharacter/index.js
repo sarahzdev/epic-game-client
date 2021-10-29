@@ -72,7 +72,7 @@ const SelectCharacter = ({ setCharacterNFT }) => {
         gameContract.off("CharacterNFTMinted", onCharacterMint);
       }
     };
-  }, [gameContract]);
+  }, [gameContract, setCharacterNFT]);
 
   const renderCharacters = () =>
     characters.map((character, index) => (
